@@ -1,0 +1,1938 @@
+{
+  "name": "atom-live-server",
+  "main": "./lib/atom-live-server",
+  "version": "1.2.5",
+  "description": "Launch a http server with live reload capability.",
+  "keywords": [
+    "static",
+    "server",
+    "live reload",
+    "livereload"
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "atom-live-server:start-3000",
+      "atom-live-server:start-4000",
+      "atom-live-server:start-5000",
+      "atom-live-server:start-8000",
+      "atom-live-server:start-9000"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jas-chen/atom-live-server.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "live-server": "^0.8.1",
+    "loophole": "^1.1.0"
+  },
+  "devDependencies": {},
+  "readme": "# atom-live-server package\n\nLaunch a simple development http server with live reload capability.\n\n![Demo](https://raw.githubusercontent.com/jas-chen/atom-live-server/master/doc/demo.gif)\n\nThis package is based on awesome [Live Server](https://github.com/tapio/live-server) project.\n\n## Usage\n\n`ctrl-shift-3` launch live server on port 3000.\n\n`ctrl-shift-4` launch live server on port 4000.\n\n`ctrl-shift-5` launch live server on port 5000.\n\n`ctrl-shift-8` launch live server on port 8000.\n\n`ctrl-shift-9` launch live server on port 9000.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jas-chen/atom-live-server/issues"
+  },
+  "homepage": "https://github.com/jas-chen/atom-live-server#readme",
+  "_id": "atom-live-server@1.2.5",
+  "_shasum": "47dfe9ddd1f153c82113ff039eabd29888208abc",
+  "_resolved": "file:../d-116410-40235-og1cd8/package.tgz",
+  "_from": "../d-116410-40235-og1cd8/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "live-server",
+        "version": "0.8.2",
+        "path": "node_modules/live-server/index.js"
+      },
+      {
+        "name": "colors",
+        "version": "1.1.2",
+        "path": "node_modules/live-server/node_modules/colors/lib/index.js"
+      },
+      {
+        "name": "connect",
+        "version": "2.30.2",
+        "path": "node_modules/live-server/node_modules/connect/index.js"
+      },
+      {
+        "name": "basic-auth-connect",
+        "version": "1.0.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/basic-auth-connect/index.js"
+      },
+      {
+        "name": "body-parser",
+        "version": "1.13.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/body-parser/index.js"
+      },
+      {
+        "name": "iconv-lite",
+        "version": "0.4.11",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/lib/index.js"
+      },
+      {
+        "name": "on-finished",
+        "version": "2.3.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/on-finished/index.js"
+      },
+      {
+        "name": "ee-first",
+        "version": "1.1.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first/index.js"
+      },
+      {
+        "name": "raw-body",
+        "version": "2.1.6",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/index.js"
+      },
+      {
+        "name": "bytes",
+        "version": "2.3.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/bytes/index.js"
+      },
+      {
+        "name": "iconv-lite",
+        "version": "0.4.13",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/lib/index.js"
+      },
+      {
+        "name": "unpipe",
+        "version": "1.0.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/unpipe/index.js"
+      },
+      {
+        "name": "bytes",
+        "version": "2.1.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/bytes/index.js"
+      },
+      {
+        "name": "compression",
+        "version": "1.5.2",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/compression/index.js"
+      },
+      {
+        "name": "accepts",
+        "version": "1.2.13",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/index.js"
+      },
+      {
+        "name": "mime-types",
+        "version": "2.1.11",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/mime-types/index.js"
+      },
+      {
+        "name": "mime-db",
+        "version": "1.23.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/index.js"
+      },
+      {
+        "name": "negotiator",
+        "version": "0.5.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/negotiator/index.js"
+      },
+      {
+        "name": "compressible",
+        "version": "2.0.7",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/compressible/index.js"
+      },
+      {
+        "name": "mime-db",
+        "version": "1.23.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/compressible/node_modules/mime-db/index.js"
+      },
+      {
+        "name": "vary",
+        "version": "1.0.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/vary/index.js"
+      },
+      {
+        "name": "connect-timeout",
+        "version": "1.6.2",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/connect-timeout/index.js"
+      },
+      {
+        "name": "ms",
+        "version": "0.7.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/connect-timeout/node_modules/ms/index.js"
+      },
+      {
+        "name": "content-type",
+        "version": "1.0.2",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/content-type/index.js"
+      },
+      {
+        "name": "cookie",
+        "version": "0.1.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/cookie/index.js"
+      },
+      {
+        "name": "cookie-parser",
+        "version": "1.3.5",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/cookie-parser/index.js"
+      },
+      {
+        "name": "cookie-signature",
+        "version": "1.0.6",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/cookie-signature/index.js"
+      },
+      {
+        "name": "csurf",
+        "version": "1.8.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/csurf/index.js"
+      },
+      {
+        "name": "csrf",
+        "version": "3.0.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/index.js"
+      },
+      {
+        "name": "base64-url",
+        "version": "1.2.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/base64-url/index.js"
+      },
+      {
+        "name": "rndm",
+        "version": "1.2.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/rndm/index.js"
+      },
+      {
+        "name": "scmp",
+        "version": "1.0.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/scmp/index.js"
+      },
+      {
+        "name": "uid-safe",
+        "version": "2.1.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/index.js"
+      },
+      {
+        "name": "random-bytes",
+        "version": "1.0.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules/random-bytes/index.js"
+      },
+      {
+        "name": "debug",
+        "version": "2.2.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/debug/node.js"
+      },
+      {
+        "name": "ms",
+        "version": "0.7.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/debug/node_modules/ms/index.js"
+      },
+      {
+        "name": "depd",
+        "version": "1.0.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/depd/index.js"
+      },
+      {
+        "name": "errorhandler",
+        "version": "1.4.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/errorhandler/index.js"
+      },
+      {
+        "name": "accepts",
+        "version": "1.3.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/index.js"
+      },
+      {
+        "name": "mime-types",
+        "version": "2.1.11",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/mime-types/index.js"
+      },
+      {
+        "name": "mime-db",
+        "version": "1.23.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/index.js"
+      },
+      {
+        "name": "negotiator",
+        "version": "0.6.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/negotiator/index.js"
+      },
+      {
+        "name": "escape-html",
+        "version": "1.0.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/escape-html/index.js"
+      },
+      {
+        "name": "express-session",
+        "version": "1.11.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/express-session/index.js"
+      },
+      {
+        "name": "crc",
+        "version": "3.3.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/index.js"
+      },
+      {
+        "name": "uid-safe",
+        "version": "2.0.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/uid-safe/index.js"
+      },
+      {
+        "name": "base64-url",
+        "version": "1.2.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/uid-safe/node_modules/base64-url/index.js"
+      },
+      {
+        "name": "finalhandler",
+        "version": "0.4.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/finalhandler/index.js"
+      },
+      {
+        "name": "escape-html",
+        "version": "1.0.2",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/escape-html/index.js"
+      },
+      {
+        "name": "on-finished",
+        "version": "2.3.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/on-finished/index.js"
+      },
+      {
+        "name": "ee-first",
+        "version": "1.1.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/on-finished/node_modules/ee-first/index.js"
+      },
+      {
+        "name": "unpipe",
+        "version": "1.0.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/unpipe/index.js"
+      },
+      {
+        "name": "fresh",
+        "version": "0.3.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/fresh/index.js"
+      },
+      {
+        "name": "http-errors",
+        "version": "1.3.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/http-errors/index.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/http-errors/node_modules/inherits/inherits.js"
+      },
+      {
+        "name": "statuses",
+        "version": "1.2.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/http-errors/node_modules/statuses/index.js"
+      },
+      {
+        "name": "method-override",
+        "version": "2.3.5",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/method-override/index.js"
+      },
+      {
+        "name": "methods",
+        "version": "1.1.2",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/method-override/node_modules/methods/index.js"
+      },
+      {
+        "name": "vary",
+        "version": "1.0.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/method-override/node_modules/vary/index.js"
+      },
+      {
+        "name": "morgan",
+        "version": "1.6.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/morgan/index.js"
+      },
+      {
+        "name": "basic-auth",
+        "version": "1.0.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/morgan/node_modules/basic-auth/index.js"
+      },
+      {
+        "name": "on-finished",
+        "version": "2.3.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/morgan/node_modules/on-finished/index.js"
+      },
+      {
+        "name": "ee-first",
+        "version": "1.1.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/morgan/node_modules/on-finished/node_modules/ee-first/index.js"
+      },
+      {
+        "name": "multiparty",
+        "version": "3.3.2",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/multiparty/index.js"
+      },
+      {
+        "name": "readable-stream",
+        "version": "1.1.14",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/readable.js"
+      },
+      {
+        "name": "core-util-is",
+        "version": "1.0.2",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/core-util-is/lib/util.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/inherits/inherits.js"
+      },
+      {
+        "name": "isarray",
+        "version": "0.0.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/isarray/index.js"
+      },
+      {
+        "name": "string_decoder",
+        "version": "0.10.31",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/string_decoder/index.js"
+      },
+      {
+        "name": "stream-counter",
+        "version": "0.2.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/stream-counter/index.js"
+      },
+      {
+        "name": "on-headers",
+        "version": "1.0.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/on-headers/index.js"
+      },
+      {
+        "name": "parseurl",
+        "version": "1.3.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/parseurl/index.js"
+      },
+      {
+        "name": "pause",
+        "version": "0.1.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/pause/index.js"
+      },
+      {
+        "name": "qs",
+        "version": "4.0.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/qs/lib/index.js"
+      },
+      {
+        "name": "response-time",
+        "version": "2.3.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/response-time/index.js"
+      },
+      {
+        "name": "serve-favicon",
+        "version": "2.3.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-favicon/index.js"
+      },
+      {
+        "name": "etag",
+        "version": "1.7.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-favicon/node_modules/etag/index.js"
+      },
+      {
+        "name": "ms",
+        "version": "0.7.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-favicon/node_modules/ms/index.js"
+      },
+      {
+        "name": "serve-index",
+        "version": "1.7.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-index/index.js"
+      },
+      {
+        "name": "accepts",
+        "version": "1.2.13",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts/index.js"
+      },
+      {
+        "name": "negotiator",
+        "version": "0.5.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts/node_modules/negotiator/index.js"
+      },
+      {
+        "name": "batch",
+        "version": "0.5.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/batch/index.js"
+      },
+      {
+        "name": "escape-html",
+        "version": "1.0.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/escape-html/index.js"
+      },
+      {
+        "name": "mime-types",
+        "version": "2.1.11",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/mime-types/index.js"
+      },
+      {
+        "name": "mime-db",
+        "version": "1.23.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/mime-types/node_modules/mime-db/index.js"
+      },
+      {
+        "name": "serve-static",
+        "version": "1.10.2",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/index.js"
+      },
+      {
+        "name": "escape-html",
+        "version": "1.0.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/escape-html/index.js"
+      },
+      {
+        "name": "send",
+        "version": "0.13.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/index.js"
+      },
+      {
+        "name": "depd",
+        "version": "1.1.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/depd/index.js"
+      },
+      {
+        "name": "destroy",
+        "version": "1.0.4",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/destroy/index.js"
+      },
+      {
+        "name": "etag",
+        "version": "1.7.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/etag/index.js"
+      },
+      {
+        "name": "mime",
+        "version": "1.3.4",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/mime/mime.js"
+      },
+      {
+        "name": "ms",
+        "version": "0.7.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/ms/index.js"
+      },
+      {
+        "name": "on-finished",
+        "version": "2.3.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/on-finished/index.js"
+      },
+      {
+        "name": "ee-first",
+        "version": "1.1.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/on-finished/node_modules/ee-first/index.js"
+      },
+      {
+        "name": "range-parser",
+        "version": "1.0.3",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/range-parser/index.js"
+      },
+      {
+        "name": "statuses",
+        "version": "1.2.1",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/statuses/index.js"
+      },
+      {
+        "name": "type-is",
+        "version": "1.6.12",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/type-is/index.js"
+      },
+      {
+        "name": "media-typer",
+        "version": "0.3.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/media-typer/index.js"
+      },
+      {
+        "name": "mime-types",
+        "version": "2.1.11",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/mime-types/index.js"
+      },
+      {
+        "name": "mime-db",
+        "version": "1.23.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/index.js"
+      },
+      {
+        "name": "utils-merge",
+        "version": "1.0.0",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/utils-merge/index.js"
+      },
+      {
+        "name": "vhost",
+        "version": "3.0.2",
+        "path": "node_modules/live-server/node_modules/connect/node_modules/vhost/index.js"
+      },
+      {
+        "name": "event-stream",
+        "version": "3.3.2",
+        "path": "node_modules/live-server/node_modules/event-stream/index.js"
+      },
+      {
+        "name": "duplexer",
+        "version": "0.1.1",
+        "path": "node_modules/live-server/node_modules/event-stream/node_modules/duplexer/index.js"
+      },
+      {
+        "name": "from",
+        "version": "0.1.3",
+        "path": "node_modules/live-server/node_modules/event-stream/node_modules/from/index.js"
+      },
+      {
+        "name": "map-stream",
+        "version": "0.1.0",
+        "path": "node_modules/live-server/node_modules/event-stream/node_modules/map-stream/index.js"
+      },
+      {
+        "name": "pause-stream",
+        "version": "0.0.11",
+        "path": "node_modules/live-server/node_modules/event-stream/node_modules/pause-stream/index.js"
+      },
+      {
+        "name": "split",
+        "version": "0.3.3",
+        "path": "node_modules/live-server/node_modules/event-stream/node_modules/split/index.js"
+      },
+      {
+        "name": "stream-combiner",
+        "version": "0.0.4",
+        "path": "node_modules/live-server/node_modules/event-stream/node_modules/stream-combiner/index.js"
+      },
+      {
+        "name": "through",
+        "version": "2.3.8",
+        "path": "node_modules/live-server/node_modules/event-stream/node_modules/through/index.js"
+      },
+      {
+        "name": "faye-websocket",
+        "version": "0.9.4",
+        "path": "node_modules/live-server/node_modules/faye-websocket/lib/faye/websocket.js"
+      },
+      {
+        "name": "websocket-driver",
+        "version": "0.6.4",
+        "path": "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver.js"
+      },
+      {
+        "name": "websocket-extensions",
+        "version": "0.1.1",
+        "path": "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/node_modules/websocket-extensions/lib/websocket_extensions.js"
+      },
+      {
+        "name": "object-assign",
+        "version": "2.1.1",
+        "path": "node_modules/live-server/node_modules/object-assign/index.js"
+      },
+      {
+        "name": "opn",
+        "version": "4.0.1",
+        "path": "node_modules/live-server/node_modules/opn/index.js"
+      },
+      {
+        "name": "object-assign",
+        "version": "4.1.0",
+        "path": "node_modules/live-server/node_modules/opn/node_modules/object-assign/index.js"
+      },
+      {
+        "name": "pinkie-promise",
+        "version": "2.0.1",
+        "path": "node_modules/live-server/node_modules/opn/node_modules/pinkie-promise/index.js"
+      },
+      {
+        "name": "pinkie",
+        "version": "2.0.4",
+        "path": "node_modules/live-server/node_modules/opn/node_modules/pinkie-promise/node_modules/pinkie/index.js"
+      },
+      {
+        "name": "send",
+        "version": "0.13.2",
+        "path": "node_modules/live-server/node_modules/send/index.js"
+      },
+      {
+        "name": "debug",
+        "version": "2.2.0",
+        "path": "node_modules/live-server/node_modules/send/node_modules/debug/node.js"
+      },
+      {
+        "name": "depd",
+        "version": "1.1.0",
+        "path": "node_modules/live-server/node_modules/send/node_modules/depd/index.js"
+      },
+      {
+        "name": "destroy",
+        "version": "1.0.4",
+        "path": "node_modules/live-server/node_modules/send/node_modules/destroy/index.js"
+      },
+      {
+        "name": "escape-html",
+        "version": "1.0.3",
+        "path": "node_modules/live-server/node_modules/send/node_modules/escape-html/index.js"
+      },
+      {
+        "name": "etag",
+        "version": "1.7.0",
+        "path": "node_modules/live-server/node_modules/send/node_modules/etag/index.js"
+      },
+      {
+        "name": "fresh",
+        "version": "0.3.0",
+        "path": "node_modules/live-server/node_modules/send/node_modules/fresh/index.js"
+      },
+      {
+        "name": "http-errors",
+        "version": "1.3.1",
+        "path": "node_modules/live-server/node_modules/send/node_modules/http-errors/index.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.1",
+        "path": "node_modules/live-server/node_modules/send/node_modules/http-errors/node_modules/inherits/inherits.js"
+      },
+      {
+        "name": "mime",
+        "version": "1.3.4",
+        "path": "node_modules/live-server/node_modules/send/node_modules/mime/mime.js"
+      },
+      {
+        "name": "ms",
+        "version": "0.7.1",
+        "path": "node_modules/live-server/node_modules/send/node_modules/ms/index.js"
+      },
+      {
+        "name": "on-finished",
+        "version": "2.3.0",
+        "path": "node_modules/live-server/node_modules/send/node_modules/on-finished/index.js"
+      },
+      {
+        "name": "ee-first",
+        "version": "1.1.1",
+        "path": "node_modules/live-server/node_modules/send/node_modules/on-finished/node_modules/ee-first/index.js"
+      },
+      {
+        "name": "range-parser",
+        "version": "1.0.3",
+        "path": "node_modules/live-server/node_modules/send/node_modules/range-parser/index.js"
+      },
+      {
+        "name": "statuses",
+        "version": "1.2.1",
+        "path": "node_modules/live-server/node_modules/send/node_modules/statuses/index.js"
+      },
+      {
+        "name": "watchr",
+        "version": "2.3.10",
+        "path": "node_modules/live-server/node_modules/watchr/out/lib/watchr.js"
+      },
+      {
+        "name": "bal-util",
+        "version": "1.18.0",
+        "path": "node_modules/live-server/node_modules/watchr/node_modules/bal-util/out/lib/balutil.js"
+      },
+      {
+        "name": "ambi",
+        "version": "2.0.0",
+        "path": "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/ambi/out/lib/ambi.js"
+      },
+      {
+        "name": "eachr",
+        "version": "2.0.4",
+        "path": "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/eachr/out/lib/eachr.js"
+      },
+      {
+        "name": "extendr",
+        "version": "2.0.1",
+        "path": "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/extendr/out/lib/extendr.js"
+      },
+      {
+        "name": "getsetdeep",
+        "version": "2.0.0",
+        "path": "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/getsetdeep/out/lib/getsetdeep.js"
+      },
+      {
+        "name": "safecallback",
+        "version": "1.0.1",
+        "path": "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/safecallback/lib/safecallback.js"
+      },
+      {
+        "name": "safefs",
+        "version": "2.0.3",
+        "path": "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/safefs/out/lib/safefs.js"
+      },
+      {
+        "name": "taskgroup",
+        "version": "2.0.0",
+        "path": "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/taskgroup/out/lib/taskgroup.js"
+      },
+      {
+        "name": "typechecker",
+        "version": "2.0.8",
+        "path": "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/typechecker/out/lib/typechecker.js"
+      },
+      {
+        "name": "loophole",
+        "version": "1.1.0",
+        "path": "node_modules/loophole/lib/loophole.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/atom-live-server.coffee"
+      ],
+      ".js": [
+        "node_modules/live-server/index.js",
+        "node_modules/live-server/live-server.js",
+        "node_modules/live-server/node_modules/colors/examples/normal-usage.js",
+        "node_modules/live-server/node_modules/colors/examples/safe-string.js",
+        "node_modules/live-server/node_modules/colors/lib/colors.js",
+        "node_modules/live-server/node_modules/colors/lib/custom/trap.js",
+        "node_modules/live-server/node_modules/colors/lib/custom/zalgo.js",
+        "node_modules/live-server/node_modules/colors/lib/extendStringPrototype.js",
+        "node_modules/live-server/node_modules/colors/lib/index.js",
+        "node_modules/live-server/node_modules/colors/lib/maps/america.js",
+        "node_modules/live-server/node_modules/colors/lib/maps/rainbow.js",
+        "node_modules/live-server/node_modules/colors/lib/maps/random.js",
+        "node_modules/live-server/node_modules/colors/lib/maps/zebra.js",
+        "node_modules/live-server/node_modules/colors/lib/styles.js",
+        "node_modules/live-server/node_modules/colors/lib/system/supports-colors.js",
+        "node_modules/live-server/node_modules/colors/safe.js",
+        "node_modules/live-server/node_modules/colors/themes/generic-logging.js",
+        "node_modules/live-server/node_modules/connect/index.js",
+        "node_modules/live-server/node_modules/connect/lib/cache.js",
+        "node_modules/live-server/node_modules/connect/lib/connect.js",
+        "node_modules/live-server/node_modules/connect/lib/index.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/basicAuth.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/bodyParser.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/compress.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/cookieParser.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/cookieSession.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/csrf.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/directory.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/errorHandler.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/favicon.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/json.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/limit.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/logger.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/methodOverride.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/multipart.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/query.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/responseTime.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/session.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/static.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/staticCache.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/timeout.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/urlencoded.js",
+        "node_modules/live-server/node_modules/connect/lib/middleware/vhost.js",
+        "node_modules/live-server/node_modules/connect/lib/patch.js",
+        "node_modules/live-server/node_modules/connect/lib/proto.js",
+        "node_modules/live-server/node_modules/connect/lib/utils.js",
+        "node_modules/live-server/node_modules/connect/node_modules/basic-auth-connect/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/lib/read.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/lib/types/json.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/lib/types/raw.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/lib/types/text.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/lib/types/urlencoded.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-codec.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-data.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/internal.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-codec.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data-generated.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/utf16.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/utf7.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/lib/bom-handling.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/lib/extend-node.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/lib/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/lib/streams.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/on-finished/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/bytes/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/dbcs-codec.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/dbcs-data.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/internal.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-codec.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-data-generated.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-data.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/utf16.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/utf7.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/lib/bom-handling.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/lib/extend-node.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/lib/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/lib/streams.js",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/unpipe/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/bytes/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/mime-types/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/negotiator/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/negotiator/lib/charset.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/negotiator/lib/encoding.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/negotiator/lib/language.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/negotiator/lib/mediaType.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/compressible/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/compressible/node_modules/mime-db/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/vary/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/connect-timeout/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/connect-timeout/node_modules/ms/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/content-type/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/cookie/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/cookie-parser/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/cookie-parser/lib/parse.js",
+        "node_modules/live-server/node_modules/connect/node_modules/cookie-signature/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/base64-url/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/rndm/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/scmp/benchmark/benchmark.js",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/scmp/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules/random-bytes/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/debug/browser.js",
+        "node_modules/live-server/node_modules/connect/node_modules/debug/debug.js",
+        "node_modules/live-server/node_modules/connect/node_modules/debug/node.js",
+        "node_modules/live-server/node_modules/connect/node_modules/debug/node_modules/ms/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/depd/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/depd/lib/compat/buffer-concat.js",
+        "node_modules/live-server/node_modules/connect/node_modules/depd/lib/compat/callsite-tostring.js",
+        "node_modules/live-server/node_modules/connect/node_modules/depd/lib/compat/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/mime-types/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/negotiator/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/negotiator/lib/charset.js",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/negotiator/lib/encoding.js",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/negotiator/lib/language.js",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/negotiator/lib/mediaType.js",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/escape-html/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/crc.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/crc1.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/crc16.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/crc16_ccitt.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/crc16_modbus.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/crc16_xmodem.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/crc24.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/crc32.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/crc8.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/crc8_1wire.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/create.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/hex.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/lib/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/uid-safe/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/uid-safe/node_modules/base64-url/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/session/cookie.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/session/memory.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/session/session.js",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/session/store.js",
+        "node_modules/live-server/node_modules/connect/node_modules/finalhandler/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/escape-html/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/on-finished/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/on-finished/node_modules/ee-first/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/unpipe/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/fresh/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/http-errors/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/http-errors/node_modules/inherits/inherits.js",
+        "node_modules/live-server/node_modules/connect/node_modules/http-errors/node_modules/inherits/inherits_browser.js",
+        "node_modules/live-server/node_modules/connect/node_modules/http-errors/node_modules/inherits/test.js",
+        "node_modules/live-server/node_modules/connect/node_modules/http-errors/node_modules/statuses/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/method-override/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/method-override/node_modules/methods/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/method-override/node_modules/vary/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/morgan/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/morgan/node_modules/basic-auth/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/morgan/node_modules/on-finished/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/morgan/node_modules/on-finished/node_modules/ee-first/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/duplex.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/lib/_stream_duplex.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/lib/_stream_passthrough.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/lib/_stream_readable.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/lib/_stream_transform.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/lib/_stream_writable.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/core-util-is/lib/util.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/core-util-is/test.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/inherits/inherits.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/inherits/inherits_browser.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/inherits/test.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/isarray/build/build.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/isarray/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/string_decoder/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/passthrough.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/readable.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/transform.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/writable.js",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/stream-counter/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/on-headers/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/parseurl/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/pause/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/qs/lib/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/qs/lib/parse.js",
+        "node_modules/live-server/node_modules/connect/node_modules/qs/lib/stringify.js",
+        "node_modules/live-server/node_modules/connect/node_modules/qs/lib/utils.js",
+        "node_modules/live-server/node_modules/connect/node_modules/response-time/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-favicon/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-favicon/node_modules/etag/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-favicon/node_modules/ms/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts/node_modules/negotiator/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts/node_modules/negotiator/lib/charset.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts/node_modules/negotiator/lib/encoding.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts/node_modules/negotiator/lib/language.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts/node_modules/negotiator/lib/mediaType.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/batch/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/escape-html/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/mime-types/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/mime-types/node_modules/mime-db/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/escape-html/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/depd/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/depd/lib/browser/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/depd/lib/compat/buffer-concat.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/depd/lib/compat/callsite-tostring.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/depd/lib/compat/event-listener-count.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/depd/lib/compat/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/destroy/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/etag/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/mime/build/build.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/mime/build/test.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/mime/cli.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/mime/mime.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/ms/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/on-finished/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/on-finished/node_modules/ee-first/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/range-parser/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/statuses/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/type-is/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/media-typer/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/mime-types/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/utils-merge/index.js",
+        "node_modules/live-server/node_modules/connect/node_modules/vhost/index.js",
+        "node_modules/live-server/node_modules/event-stream/examples/pretty.js",
+        "node_modules/live-server/node_modules/event-stream/index.js",
+        "node_modules/live-server/node_modules/event-stream/node_modules/duplexer/index.js",
+        "node_modules/live-server/node_modules/event-stream/node_modules/from/index.js",
+        "node_modules/live-server/node_modules/event-stream/node_modules/map-stream/examples/pretty.js",
+        "node_modules/live-server/node_modules/event-stream/node_modules/map-stream/index.js",
+        "node_modules/live-server/node_modules/event-stream/node_modules/pause-stream/index.js",
+        "node_modules/live-server/node_modules/event-stream/node_modules/split/examples/pretty.js",
+        "node_modules/live-server/node_modules/event-stream/node_modules/split/index.js",
+        "node_modules/live-server/node_modules/event-stream/node_modules/stream-combiner/index.js",
+        "node_modules/live-server/node_modules/event-stream/node_modules/through/index.js",
+        "node_modules/live-server/node_modules/faye-websocket/examples/autobahn_client.js",
+        "node_modules/live-server/node_modules/faye-websocket/examples/client.js",
+        "node_modules/live-server/node_modules/faye-websocket/examples/proxy_server.js",
+        "node_modules/live-server/node_modules/faye-websocket/examples/server.js",
+        "node_modules/live-server/node_modules/faye-websocket/lib/faye/eventsource.js",
+        "node_modules/live-server/node_modules/faye-websocket/lib/faye/websocket/api/event.js",
+        "node_modules/live-server/node_modules/faye-websocket/lib/faye/websocket/api/event_target.js",
+        "node_modules/live-server/node_modules/faye-websocket/lib/faye/websocket/api.js",
+        "node_modules/live-server/node_modules/faye-websocket/lib/faye/websocket/client.js",
+        "node_modules/live-server/node_modules/faye-websocket/lib/faye/websocket.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/examples/tcp_server.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/base.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/client.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/draft75.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/draft76.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/headers.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi/frame.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi/message.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/proxy.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/server.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/stream_reader.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/http_parser.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/streams.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/node_modules/websocket-extensions/lib/parser.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/node_modules/websocket-extensions/lib/pipeline/cell.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/node_modules/websocket-extensions/lib/pipeline/functor.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/node_modules/websocket-extensions/lib/pipeline/index.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/node_modules/websocket-extensions/lib/pipeline/pledge.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/node_modules/websocket-extensions/lib/pipeline/ring_buffer.js",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/node_modules/websocket-extensions/lib/websocket_extensions.js",
+        "node_modules/live-server/node_modules/object-assign/index.js",
+        "node_modules/live-server/node_modules/opn/index.js",
+        "node_modules/live-server/node_modules/opn/node_modules/object-assign/index.js",
+        "node_modules/live-server/node_modules/opn/node_modules/pinkie-promise/index.js",
+        "node_modules/live-server/node_modules/opn/node_modules/pinkie-promise/node_modules/pinkie/index.js",
+        "node_modules/live-server/node_modules/send/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/debug/browser.js",
+        "node_modules/live-server/node_modules/send/node_modules/debug/debug.js",
+        "node_modules/live-server/node_modules/send/node_modules/debug/node.js",
+        "node_modules/live-server/node_modules/send/node_modules/depd/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/depd/lib/browser/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/depd/lib/compat/buffer-concat.js",
+        "node_modules/live-server/node_modules/send/node_modules/depd/lib/compat/callsite-tostring.js",
+        "node_modules/live-server/node_modules/send/node_modules/depd/lib/compat/event-listener-count.js",
+        "node_modules/live-server/node_modules/send/node_modules/depd/lib/compat/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/destroy/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/escape-html/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/etag/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/fresh/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/http-errors/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/http-errors/node_modules/inherits/inherits.js",
+        "node_modules/live-server/node_modules/send/node_modules/http-errors/node_modules/inherits/inherits_browser.js",
+        "node_modules/live-server/node_modules/send/node_modules/http-errors/node_modules/inherits/test.js",
+        "node_modules/live-server/node_modules/send/node_modules/mime/build/build.js",
+        "node_modules/live-server/node_modules/send/node_modules/mime/build/test.js",
+        "node_modules/live-server/node_modules/send/node_modules/mime/cli.js",
+        "node_modules/live-server/node_modules/send/node_modules/mime/mime.js",
+        "node_modules/live-server/node_modules/send/node_modules/ms/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/on-finished/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/on-finished/node_modules/ee-first/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/range-parser/index.js",
+        "node_modules/live-server/node_modules/send/node_modules/statuses/index.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/ambi/out/lib/ambi.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/eachr/example.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/eachr/out/lib/eachr.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/extendr/out/lib/extendr.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/getsetdeep/out/lib/getsetdeep.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/safecallback/lib/safecallback.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/safefs/out/lib/safefs.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/taskgroup/out/lib/taskgroup.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/typechecker/cyclic.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/typechecker/out/lib/typechecker.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/out/lib/balutil.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/out/lib/compare.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/out/lib/events.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/out/lib/flow.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/out/lib/html.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/out/lib/modules.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/out/lib/paths.js",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/out/lib/types.js",
+        "node_modules/live-server/node_modules/watchr/out/lib/watchr.js",
+        "node_modules/loophole/lib/loophole.js"
+      ],
+      ".json": [
+        "node_modules/live-server/node_modules/colors/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/basic-auth-connect/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/big5-added.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp936.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp949.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp950.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/eucjp.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gbk-added.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/shiftjis.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/on-finished/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/bytes/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/big5-added.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp936.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp949.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp950.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/eucjp.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/gbk-added.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/shiftjis.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/iconv-lite/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/node_modules/unpipe/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/body-parser/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/bytes/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/db.json",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/mime-types/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/negotiator/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/compressible/node_modules/mime-db/db.json",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/compressible/node_modules/mime-db/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/compressible/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/vary/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/compression/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/connect-timeout/node_modules/ms/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/connect-timeout/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/content-type/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/cookie/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/cookie-parser/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/cookie-signature/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/base64-url/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/rndm/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/scmp/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules/random-bytes/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/csurf/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/debug/bower.json",
+        "node_modules/live-server/node_modules/connect/node_modules/debug/component.json",
+        "node_modules/live-server/node_modules/connect/node_modules/debug/node_modules/ms/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/debug/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/depd/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/db.json",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/mime-types/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/negotiator/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/escape-html/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/errorhandler/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/crc/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/uid-safe/node_modules/base64-url/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/uid-safe/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/express-session/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/escape-html/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/on-finished/node_modules/ee-first/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/on-finished/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/unpipe/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/finalhandler/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/fresh/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/http-errors/node_modules/inherits/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/http-errors/node_modules/statuses/codes.json",
+        "node_modules/live-server/node_modules/connect/node_modules/http-errors/node_modules/statuses/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/http-errors/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/method-override/node_modules/methods/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/method-override/node_modules/vary/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/method-override/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/morgan/node_modules/basic-auth/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/morgan/node_modules/on-finished/node_modules/ee-first/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/morgan/node_modules/on-finished/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/morgan/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/core-util-is/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/inherits/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/isarray/component.json",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/isarray/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/string_decoder/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/stream-counter/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/multiparty/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/on-headers/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/parseurl/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/pause/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/qs/bower.json",
+        "node_modules/live-server/node_modules/connect/node_modules/qs/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/response-time/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-favicon/node_modules/etag/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-favicon/node_modules/ms/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-favicon/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts/node_modules/negotiator/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/batch/component.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/batch/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/escape-html/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/mime-types/node_modules/mime-db/db.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/mime-types/node_modules/mime-db/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/mime-types/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-index/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/escape-html/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/depd/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/destroy/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/etag/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/mime/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/mime/types.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/ms/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/on-finished/node_modules/ee-first/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/on-finished/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/range-parser/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/statuses/codes.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/statuses/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/serve-static/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/media-typer/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/db.json",
+        "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/mime-types/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/type-is/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/utils-merge/package.json",
+        "node_modules/live-server/node_modules/connect/node_modules/vhost/package.json",
+        "node_modules/live-server/node_modules/connect/package.json",
+        "node_modules/live-server/node_modules/event-stream/node_modules/duplexer/package.json",
+        "node_modules/live-server/node_modules/event-stream/node_modules/from/package.json",
+        "node_modules/live-server/node_modules/event-stream/node_modules/map-stream/package.json",
+        "node_modules/live-server/node_modules/event-stream/node_modules/pause-stream/package.json",
+        "node_modules/live-server/node_modules/event-stream/node_modules/split/package.json",
+        "node_modules/live-server/node_modules/event-stream/node_modules/stream-combiner/package.json",
+        "node_modules/live-server/node_modules/event-stream/node_modules/through/package.json",
+        "node_modules/live-server/node_modules/event-stream/package.json",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/node_modules/websocket-extensions/package.json",
+        "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/package.json",
+        "node_modules/live-server/node_modules/faye-websocket/package.json",
+        "node_modules/live-server/node_modules/object-assign/package.json",
+        "node_modules/live-server/node_modules/opn/node_modules/object-assign/package.json",
+        "node_modules/live-server/node_modules/opn/node_modules/pinkie-promise/node_modules/pinkie/package.json",
+        "node_modules/live-server/node_modules/opn/node_modules/pinkie-promise/package.json",
+        "node_modules/live-server/node_modules/opn/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/debug/bower.json",
+        "node_modules/live-server/node_modules/send/node_modules/debug/component.json",
+        "node_modules/live-server/node_modules/send/node_modules/debug/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/depd/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/destroy/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/escape-html/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/etag/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/fresh/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/http-errors/node_modules/inherits/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/http-errors/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/mime/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/mime/types.json",
+        "node_modules/live-server/node_modules/send/node_modules/ms/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/on-finished/node_modules/ee-first/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/on-finished/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/range-parser/package.json",
+        "node_modules/live-server/node_modules/send/node_modules/statuses/codes.json",
+        "node_modules/live-server/node_modules/send/node_modules/statuses/package.json",
+        "node_modules/live-server/node_modules/send/package.json",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/ambi/package.json",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/eachr/package.json",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/extendr/package.json",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/getsetdeep/package.json",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/safecallback/package.json",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/safefs/package.json",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/taskgroup/package.json",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/typechecker/package.json",
+        "node_modules/live-server/node_modules/watchr/node_modules/bal-util/package.json",
+        "node_modules/live-server/node_modules/watchr/package.json",
+        "node_modules/live-server/package.json",
+        "node_modules/loophole/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "live-server",
+          ""
+        ],
+        "dependencies": {
+          "live-server": "^0.8.1",
+          "loophole": "^1.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server"
+        ],
+        "dependencies": {
+          "connect": "2.x.x",
+          "faye-websocket": "0.9.x",
+          "object-assign": "^2.0.0",
+          "watchr": "2.3.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect",
+          "node_modules/live-server/node_modules/connect/lib",
+          "node_modules/live-server/node_modules/connect/lib/middleware"
+        ],
+        "dependencies": {
+          "basic-auth-connect": "1.0.0",
+          "body-parser": "~1.13.3",
+          "bytes": "2.1.0",
+          "cookie": "0.1.3",
+          "cookie-parser": "~1.3.5",
+          "cookie-signature": "1.0.6",
+          "compression": "~1.5.2",
+          "connect-timeout": "~1.6.2",
+          "content-type": "~1.0.1",
+          "csurf": "~1.8.3",
+          "debug": "~2.2.0",
+          "depd": "~1.0.1",
+          "errorhandler": "~1.4.2",
+          "express-session": "~1.11.3",
+          "finalhandler": "0.4.0",
+          "fresh": "0.3.0",
+          "http-errors": "~1.3.1",
+          "method-override": "~2.3.5",
+          "morgan": "~1.6.1",
+          "multiparty": "3.3.2",
+          "on-headers": "~1.0.0",
+          "parseurl": "~1.3.0",
+          "pause": "0.1.0",
+          "qs": "4.0.0",
+          "response-time": "~2.3.1",
+          "serve-favicon": "~2.3.0",
+          "serve-index": "~1.7.2",
+          "serve-static": "~1.10.0",
+          "type-is": "~1.6.6",
+          "utils-merge": "1.0.0",
+          "vhost": "~3.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/body-parser",
+          "node_modules/live-server/node_modules/connect/node_modules/body-parser/lib",
+          "node_modules/live-server/node_modules/connect/node_modules/body-parser/lib/types"
+        ],
+        "dependencies": {
+          "bytes": "2.1.0",
+          "content-type": "~1.0.1",
+          "debug": "~2.2.0",
+          "depd": "~1.0.1",
+          "http-errors": "~1.3.1",
+          "iconv-lite": "0.4.11",
+          "on-finished": "~2.3.0",
+          "qs": "4.0.0",
+          "raw-body": "~2.1.2",
+          "type-is": "~1.6.6"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/on-finished"
+        ],
+        "dependencies": {
+          "ee-first": "1.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/body-parser/node_modules/raw-body"
+        ],
+        "dependencies": {
+          "bytes": "2.3.0",
+          "iconv-lite": "0.4.13",
+          "unpipe": "1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/compression"
+        ],
+        "dependencies": {
+          "accepts": "~1.2.12",
+          "bytes": "2.1.0",
+          "compressible": "~2.0.5",
+          "debug": "~2.2.0",
+          "on-headers": "~1.0.0",
+          "vary": "~1.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts"
+        ],
+        "dependencies": {
+          "mime-types": "~2.1.6",
+          "negotiator": "0.5.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/accepts/node_modules/mime-types"
+        ],
+        "dependencies": {
+          "mime-db": "~1.23.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/compression/node_modules/compressible"
+        ],
+        "dependencies": {
+          "mime-db": ">= 1.21.0 < 2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/connect-timeout"
+        ],
+        "dependencies": {
+          "debug": "~2.2.0",
+          "http-errors": "~1.3.1",
+          "ms": "0.7.1",
+          "on-headers": "~1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/cookie-parser",
+          "node_modules/live-server/node_modules/connect/node_modules/cookie-parser/lib"
+        ],
+        "dependencies": {
+          "cookie": "0.1.3",
+          "cookie-signature": "1.0.6"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/csurf"
+        ],
+        "dependencies": {
+          "cookie": "0.1.3",
+          "cookie-signature": "1.0.6",
+          "csrf": "~3.0.0",
+          "http-errors": "~1.3.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf"
+        ],
+        "dependencies": {
+          "base64-url": "1.2.1",
+          "rndm": "1.2.0",
+          "scmp": "1.0.0",
+          "uid-safe": "2.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/csurf/node_modules/csrf/node_modules/uid-safe"
+        ],
+        "dependencies": {
+          "base64-url": "1.2.1",
+          "random-bytes": "~1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/debug"
+        ],
+        "dependencies": {
+          "ms": "0.7.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/errorhandler"
+        ],
+        "dependencies": {
+          "accepts": "~1.3.0",
+          "escape-html": "~1.0.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts"
+        ],
+        "dependencies": {
+          "mime-types": "~2.1.11",
+          "negotiator": "0.6.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/errorhandler/node_modules/accepts/node_modules/mime-types"
+        ],
+        "dependencies": {
+          "mime-db": "~1.23.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/express-session",
+          "node_modules/live-server/node_modules/connect/node_modules/express-session/session"
+        ],
+        "dependencies": {
+          "cookie": "0.1.3",
+          "cookie-signature": "1.0.6",
+          "crc": "3.3.0",
+          "debug": "~2.2.0",
+          "depd": "~1.0.1",
+          "on-headers": "~1.0.0",
+          "parseurl": "~1.3.0",
+          "uid-safe": "~2.0.0",
+          "utils-merge": "1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/express-session/node_modules/uid-safe"
+        ],
+        "dependencies": {
+          "base64-url": "1.2.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/finalhandler"
+        ],
+        "dependencies": {
+          "debug": "~2.2.0",
+          "escape-html": "1.0.2",
+          "on-finished": "~2.3.0",
+          "unpipe": "~1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/finalhandler/node_modules/on-finished"
+        ],
+        "dependencies": {
+          "ee-first": "1.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/http-errors"
+        ],
+        "dependencies": {
+          "inherits": "~2.0.1",
+          "statuses": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/method-override"
+        ],
+        "dependencies": {
+          "debug": "~2.2.0",
+          "methods": "~1.1.1",
+          "parseurl": "~1.3.0",
+          "vary": "~1.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/morgan"
+        ],
+        "dependencies": {
+          "basic-auth": "~1.0.3",
+          "debug": "~2.2.0",
+          "depd": "~1.0.1",
+          "on-finished": "~2.3.0",
+          "on-headers": "~1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/morgan/node_modules/on-finished"
+        ],
+        "dependencies": {
+          "ee-first": "1.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/multiparty"
+        ],
+        "dependencies": {
+          "readable-stream": "~1.1.9",
+          "stream-counter": "~0.2.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream",
+          "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/lib"
+        ],
+        "dependencies": {
+          "core-util-is": "~1.0.0",
+          "isarray": "0.0.1",
+          "string_decoder": "~0.10.x",
+          "inherits": "~2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/stream-counter",
+          "node_modules/live-server/node_modules/connect/node_modules/multiparty/node_modules/stream-counter/test"
+        ],
+        "dependencies": {
+          "readable-stream": "~1.1.8"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/response-time"
+        ],
+        "dependencies": {
+          "depd": "~1.0.1",
+          "on-headers": "~1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/serve-favicon"
+        ],
+        "dependencies": {
+          "etag": "~1.7.0",
+          "fresh": "0.3.0",
+          "ms": "0.7.1",
+          "parseurl": "~1.3.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/serve-index"
+        ],
+        "dependencies": {
+          "accepts": "~1.2.13",
+          "batch": "0.5.3",
+          "debug": "~2.2.0",
+          "escape-html": "~1.0.3",
+          "http-errors": "~1.3.1",
+          "mime-types": "~2.1.9",
+          "parseurl": "~1.3.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/accepts"
+        ],
+        "dependencies": {
+          "mime-types": "~2.1.6",
+          "negotiator": "0.5.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/serve-index/node_modules/mime-types"
+        ],
+        "dependencies": {
+          "mime-db": "~1.23.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/serve-static"
+        ],
+        "dependencies": {
+          "escape-html": "~1.0.3",
+          "parseurl": "~1.3.1",
+          "send": "0.13.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send"
+        ],
+        "dependencies": {
+          "debug": "~2.2.0",
+          "depd": "~1.1.0",
+          "destroy": "~1.0.4",
+          "escape-html": "~1.0.3",
+          "etag": "~1.7.0",
+          "fresh": "0.3.0",
+          "http-errors": "~1.3.1",
+          "mime": "1.3.4",
+          "ms": "0.7.1",
+          "on-finished": "~2.3.0",
+          "range-parser": "~1.0.3",
+          "statuses": "~1.2.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/serve-static/node_modules/send/node_modules/on-finished"
+        ],
+        "dependencies": {
+          "ee-first": "1.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/type-is"
+        ],
+        "dependencies": {
+          "media-typer": "0.3.0",
+          "mime-types": "~2.1.10"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/connect/node_modules/type-is/node_modules/mime-types"
+        ],
+        "dependencies": {
+          "mime-db": "~1.23.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/event-stream/examples",
+          "node_modules/live-server/node_modules/event-stream",
+          "node_modules/live-server/node_modules/event-stream/test",
+          "node_modules/live-server/node_modules/event-stream/test/helper"
+        ],
+        "dependencies": {
+          "through": "~2.3.1",
+          "duplexer": "~0.1.1",
+          "from": "~0",
+          "map-stream": "~0.1.0",
+          "pause-stream": "0.0.11",
+          "split": "0.3",
+          "stream-combiner": "~0.0.4"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/event-stream/node_modules/pause-stream",
+          "node_modules/live-server/node_modules/event-stream/node_modules/pause-stream/test"
+        ],
+        "dependencies": {
+          "through": "~2.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/event-stream/node_modules/split/examples",
+          "node_modules/live-server/node_modules/event-stream/node_modules/split",
+          "node_modules/live-server/node_modules/event-stream/node_modules/split/test"
+        ],
+        "dependencies": {
+          "through": "2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/event-stream/node_modules/stream-combiner",
+          "node_modules/live-server/node_modules/event-stream/node_modules/stream-combiner/test"
+        ],
+        "dependencies": {
+          "duplexer": "~0.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/faye-websocket/examples",
+          "node_modules/live-server/node_modules/faye-websocket/lib/faye",
+          "node_modules/live-server/node_modules/faye-websocket/lib/faye/websocket/api",
+          "node_modules/live-server/node_modules/faye-websocket/lib/faye/websocket",
+          "node_modules/live-server/node_modules/faye-websocket"
+        ],
+        "dependencies": {
+          "websocket-driver": ">=0.5.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/examples",
+          "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver",
+          "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi",
+          "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket",
+          "node_modules/live-server/node_modules/faye-websocket/node_modules/websocket-driver"
+        ],
+        "dependencies": {
+          "websocket-extensions": ">=0.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/opn"
+        ],
+        "dependencies": {
+          "object-assign": "^4.0.1",
+          "pinkie-promise": "^2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/opn/node_modules/pinkie-promise"
+        ],
+        "dependencies": {
+          "pinkie": "^2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/send"
+        ],
+        "dependencies": {
+          "debug": "~2.2.0",
+          "depd": "~1.1.0",
+          "destroy": "~1.0.4",
+          "escape-html": "~1.0.3",
+          "etag": "~1.7.0",
+          "fresh": "0.3.0",
+          "http-errors": "~1.3.1",
+          "mime": "1.3.4",
+          "ms": "0.7.1",
+          "on-finished": "~2.3.0",
+          "range-parser": "~1.0.3",
+          "statuses": "~1.2.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/send/node_modules/debug"
+        ],
+        "dependencies": {
+          "ms": "0.7.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/send/node_modules/http-errors"
+        ],
+        "dependencies": {
+          "inherits": "~2.0.1",
+          "statuses": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/send/node_modules/on-finished"
+        ],
+        "dependencies": {
+          "ee-first": "1.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/watchr/out/lib",
+          "node_modules/live-server/node_modules/watchr"
+        ],
+        "dependencies": {
+          "bal-util": "~1.18.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/out/lib",
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util"
+        ],
+        "dependencies": {
+          "ambi": "~2.0.0",
+          "eachr": "~2.0.2",
+          "extendr": "~2.0.1",
+          "getsetdeep": "~2.0.0",
+          "safecallback": "~1.0.1",
+          "safefs": "~2.0.3",
+          "taskgroup": "~2.0.0",
+          "typechecker": "~2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/ambi/out/lib",
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/ambi"
+        ],
+        "dependencies": {
+          "typechecker": "~2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/eachr",
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/eachr/out/lib"
+        ],
+        "dependencies": {
+          "typechecker": "^2.0.8"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/extendr/out/lib",
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/extendr"
+        ],
+        "dependencies": {
+          "typechecker": "~2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/getsetdeep/out/lib",
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/getsetdeep"
+        ],
+        "dependencies": {
+          "typechecker": "~2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/taskgroup/out/lib",
+          "node_modules/live-server/node_modules/watchr/node_modules/bal-util/node_modules/taskgroup"
+        ],
+        "dependencies": {
+          "typechecker": "~2.0.1",
+          "ambi": "~2.0.0"
+        }
+      }
+    ]
+  }
+}

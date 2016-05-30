@@ -1,0 +1,39 @@
+{
+  "name": "egghead-react-snippets",
+  "version": "1.1.1",
+  "description": "A port of Joe Maddalone's React snippets for Sublime Text",
+  "keywords": [
+    "react",
+    "es6",
+    "snippets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonboiser/atom-egghead-react-snippets.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "readme": "# Egghead React Snippets\n\n## About\nThis is a port of Joe Maddalone's comprehensive snippets collection [ReactSublimeSnippets](https://github.com/joemaddalone/ReactSublimeSnippets), made with the help of [_atomizr_](https://github.com/idleberg/atomizr).\n\nIf you've seen Joe's videos on [Egghead](https://egghead.io), you've probably seen him use these snippets in Sublime Text. I wanted to make these available for Atom users.\n\n## Snippets\n\nThis library has many of the snippets in [ReactSublimeSnippets](https://github.com/joemaddalone/ReactSublimeSnippets), but not all of them. It does not include snippets for:\n\n* `React.DOM` API, since it assumes people will be using JSX.\n* ES5-style `React.createClass({...})` style of defining Component classes, assuming people will be using ES6 class syntax.\n\nIt also differs stylistically from the original versions:\n* Adheres to Airbnb style guide.\n* Use tabs instead of spaces to accommodate different tab-widths.\n* Descriptions are edited to read better in atom-autocomplete tooltips.\n\n## Future plans\nIn future versions, I would like to add snippets for Redux and ES7 syntax.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jonboiser/atom-egghead-react-snippets/issues"
+  },
+  "homepage": "https://github.com/jonboiser/atom-egghead-react-snippets#readme",
+  "_id": "egghead-react-snippets@1.1.1",
+  "_shasum": "9b2d3957b7ed27def0c3956c7b5fd135d40316b2",
+  "_resolved": "file:../d-116420-32219-5upme2/package.tgz",
+  "_from": "../d-116420-32219-5upme2/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

@@ -1,0 +1,24 @@
+"*":
+  "atom-ternjs":
+    lint: true
+  core:
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    invisibles: {}
+  "exception-reporting":
+    userId: "14f68247-6a46-f1eb-5236-59c2b3faca1d"
+  minimap: {}
+  "node-debugger":
+    nodePath: "/usr/local/bin/node"
+  react:
+    enabledForAllJavascriptFiles: true
+  "sync-settings":
+    _analyticsUserId: "9772c2ad-77c6-4671-b716-40d5b0926a57"
+    _lastBackupHash: "982ed22c2b6e63b3eff24eab523a2e80bb15c2d2"
+    gistId: "3f0770aa267e599f01a78e06e50b0588"
+    personalAccessToken: "337bae673fee1a69eae3884b9d898c30d9af8f70"
+  welcome:
+    showOnStartup: false
