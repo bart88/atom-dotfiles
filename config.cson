@@ -2,6 +2,9 @@
   "atom-ternjs":
     lint: true
   core:
+    disabledPackages: [
+      "sync-settings"
+    ]
     themes: [
       "seti-ui"
       "seti-syntax"
